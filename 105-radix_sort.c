@@ -1,10 +1,11 @@
 #include "sort.h"
 #include <math.h>
+
 /**
  *copy - merge sort algorithm
- *@array: the int array pointer header
- *@dest: the destination array
- *@size:  the array size
+ *@array: int array
+ *@dest: destination array
+ *@size: array size
  */
 
 void copy(int *array, int *dest, size_t size)
@@ -18,12 +19,13 @@ void copy(int *array, int *dest, size_t size)
 }
 
 /**
- *lsd_counting - sort int array performing LSD Radix sorting algorithm
- *@array: the integer array
- *@sorted: the integer array
- *@size: the array size
- *@exp: exponetial
+ *lsd_counting - sort int array using LSD Radix sorting algorithm
+ *@array: integer array
+ *@sorted: integer array
+ *@size: array size
+ *@exp: exponential
  */
+
 void lsd_counting(int *array, int *sorted, size_t size, size_t exp)
 {
 	size_t bi;
@@ -56,9 +58,9 @@ void lsd_counting(int *array, int *sorted, size_t size, size_t exp)
 
 
 /**
- *radix_sort - sort int array performing LSD Radix sorting algorithm
- *@array: the integer array
- *@size: the array size
+ *radix_sort - sort int array using LSD Radix sorting algorithm
+ *@array: integer array
+ *@size: array size
  */
 
 void radix_sort(int *array, size_t size)
