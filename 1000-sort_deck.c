@@ -1,9 +1,10 @@
 #include "deck.h"
 
 /**
- * sort_deck - sorts a deck of card
- * @deck: doubly linked list to sort
+ * sort_deck - sort deck of cards
+ * @deck: doubly linked list
  */
+
 void sort_deck(deck_node_t **deck)
 {
 	deck_node_t *curr;
@@ -44,11 +45,11 @@ void sort_deck(deck_node_t **deck)
 }
 
 /**
- * card_value - returns the value of a card
- * @node: card in a deck
- *
- * Return: value between 1 and 52
+ * card_value - value of card
+ * @node: card in deck
+ * Return: value
  */
+
 int card_value(deck_node_t *node)
 {
 	char *val[13] = {"Ace", "2", "3", "4", "5", "6",
@@ -72,13 +73,13 @@ int card_value(deck_node_t *node)
 }
 
 /**
- * _strcmp - compares two strings
- * @s1: first string to compare
- * @s2: second string to compare
- *
- * Return: less than 0 if s1 is less than s2, 0 if they're equal,
- * more than 0 if s1 is greater than s2
+ * _strcmp - compares 2 strings
+ * @s1: first string
+ * @s2: second string
+ * Return: less than 0 if s1 < s2, 0 if equal,
+ * more than 0 if s1 > s2
  */
+
 int _strcmp(const char *s1, const char *s2)
 {
 	while (*s1 == *s2)
@@ -94,11 +95,11 @@ int _strcmp(const char *s1, const char *s2)
 }
 
 /**
- * list_len_deck - function returns length of list
- * @list: head of list
- *
+ * list_len_deck - length of list
+ * @list: list head
  * Return: length
  */
+
 size_t list_len_deck(deck_node_t *list)
 {
 	size_t len = 0;
