@@ -1,11 +1,12 @@
 #include "sort.h"
 
 /**
-  * counting_sort - Selection sort
+  * counting_sort - selection sort
   * @array: array
   * @size: size
   * Return: nothing
   */
+
 void counting_sort(int *array, size_t size)
 {
 	int *counter = NULL, *c_a = NULL;
