@@ -1,13 +1,14 @@
 #include "sort.h"
 
 /**
-  * swap_s - swap two element of a list
+  * swap_s - swap 2 elements of a list
   * @array: array
   * @i: index
   * @j: j
   * @size: the array size
   * Return: nothing
   */
+
 void swap_s(int *array, int i, int j, int size)
 {
 	int copy_num = 0;
@@ -19,13 +20,14 @@ void swap_s(int *array, int i, int j, int size)
 }
 
 /**
-  * lomuto_p - swap two element of a list
+  * lomuto_p - swap 2 elements of a list
   * @array: array
   * @low: index
   * @high: j
-  * @size: the array size
+  * @size: array size
   * Return: nothing
   */
+
 int lomuto_p(int *array, int low, int high, int size)
 {
 	int pivot = 0, i = 0, j = 0;
@@ -47,13 +49,14 @@ int lomuto_p(int *array, int low, int high, int size)
 }
 
 /**
-  * qs_algo - swap two element of a list
+  * qs_algo - swap 2 elements of a list
   * @array: array
   * @low: index
   * @high: j
-  * @size: the array size
+  * @size: array size
   * Return: nothing
   */
+
 void qs_algo(int *array, int low, int high, int size)
 {
 	int pivot = 0;
@@ -67,11 +70,12 @@ void qs_algo(int *array, int low, int high, int size)
 }
 
 /**
-  * quick_sort - Selection sort
+  * quick_sort - selection sort
   * @array: array
   * @size: size
   * Return: nothing
   */
+
 void quick_sort(int *array, size_t size)
 {
 	size_t high = 0, low = 0;
