@@ -1,13 +1,14 @@
 #include "sort.h"
 
 /**
-  * swap_s - swap two element of a list
+  * swap_s - swap 2 elements of a list
   * @array: array
   * @i: index
   * @j: j
   * @size: size
   * Return: nothing
   */
+
 void swap_s(int *array, int i, int j, int size)
 {
 	int copy_num = 0;
@@ -19,13 +20,14 @@ void swap_s(int *array, int i, int j, int size)
 }
 
 /**
-  * heaphy - Selection sort
+  * heaphy - selection sort
   * @array: array
   * @si: si
   * @bin: bin
   * @size: size
   * Return: nothing
   */
+
 void heaphy(int *array, int si, int bin, int size)
 {
 	int largt = bin, left = (bin * 2) + 1, rigth = (bin * 2) + 2;
@@ -44,11 +46,12 @@ void heaphy(int *array, int si, int bin, int size)
 }
 
 /**
-  * heap_sort - Selection sort
+  * heap_sort - selection sort
   * @array: array
   * @size: size
   * Return: nothing
   */
+
 void heap_sort(int *array, size_t size)
 {
 	int bin = 0, si = size;
