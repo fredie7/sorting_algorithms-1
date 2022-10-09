@@ -1,10 +1,12 @@
 #include "sort.h"
+
 /**
  *swap - sort list using insertion algorithm
- *@list: the list to be sorted
- *@top: th current node
- *Return: poniter to the swaped position
+ *@list: list to be sorted
+ *@top: current node
+ *Return: pointer to the swapped position
  */
+
 listint_t *swap(listint_t **list, listint_t *top)
 {
 	listint_t *next = top->next, *prev = top->prev;
@@ -28,11 +30,12 @@ listint_t *swap(listint_t **list, listint_t *top)
 
 /**
  *sort_back - sort list using insertion algorithm
- *@list: the list to be sorted
+ *@list: list to be sorted
  *@top: flag
  *@flag: flag
  *Return: state
  */
+
 int sort_back(listint_t **list, listint_t *top, int *flag)
 {
 	/* printf("back\n"); */
@@ -60,10 +63,11 @@ int sort_back(listint_t **list, listint_t *top, int *flag)
 
 /**
  *sort_fow - sort list using insertion algorithm
- *@list: the list to be sorted
+ *@list: list to be sorted
  *@flag: flag
  *Return: state
  */
+
 int sort_fow(listint_t **list, int flag)
 {
 	listint_t *top = *list, *back;
@@ -94,12 +98,11 @@ int sort_fow(listint_t **list, int flag)
 }
 
 
-
-
 /**
  *cocktail_sort_list - sort list using insertion algorithm
- *@list: the list to be sorted
+ *@list: list to be sorted
  */
+
 void cocktail_sort_list(listint_t **list)
 {
 	int flag = 0;
