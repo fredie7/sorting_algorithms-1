@@ -1,12 +1,13 @@
 #include "sort.h"
 
 /**
-  * swap_s - swap two element of a list
+  * swap_s - swap 2 elements of a list
   * @array: array
   * @i: index
   * @j: j
   * Return: nothing
   */
+
 void swap_s(int *array, int i, int j)
 {
 	int copy_num = 0;
@@ -17,11 +18,12 @@ void swap_s(int *array, int i, int j)
 }
 
 /**
-  * shell_sort - Selection sort
+  * shell_sort - selection sort
   * @array: array
   * @size: size
   * Return: nothing
   */
+
 void shell_sort(int *array, size_t size)
 {
 	int gap = 1, i = 0, j = 0, si = size;
