@@ -5,7 +5,7 @@
   * @array: array
   * @i: index
   * @j: j
-  * @size: the array size
+  * @size: array size
   * Return: nothing
   */
 
