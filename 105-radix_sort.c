@@ -1,11 +1,12 @@
 #include "sort.h"
 
 /**
- * count_sort_LSD - count sort with LSD
- * @array: array to sort
- * @size: size of the array
+ * count_sort_LSD - sort using LSD Radix algorithm
+ * @array: array
+ * @size: array size
  * @lsd: least significant digit
  */
+
 void count_sort_LSD(int *array, size_t size, size_t lsd)
 {
 	int count_arr[10] = {0}, *out_arr, l, m;
@@ -31,10 +32,11 @@ void count_sort_LSD(int *array, size_t size, size_t lsd)
 }
 
 /**
- * radix_sort - sorts an array following the Radix sort algorithm
- * @array: array of ints to sort
- * @size: size of the array
+ * radix_sort - sort array using Radix sort algorithm
+ * @array: int array
+ * @size: array size
  */
+
 void radix_sort(int *array, size_t size)
 {
 	int max;
