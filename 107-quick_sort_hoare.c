@@ -1,14 +1,14 @@
 #include "sort.h"
 
 /**
- * partition - gives a piv index for Quicksort
- * @array: array to find the piv in
- * @left: index of the left element
- * @right: index of the right element
- * @size: size of the array
- *
- * Return: the index of the piv element
+ * partition - index for quicksort
+ * @array: array
+ * @left: index of left element
+ * @right: index of right element
+ * @size: array size
+ * Return: index
  */
+
 int partition(int *array, int left, int right, size_t size)
 {
 	int tmp, pivot = array[right];
@@ -38,12 +38,13 @@ int partition(int *array, int left, int right, size_t size)
 }
 
 /**
- * quick_recursion - helper function for Quicksort
- * @array: array to sort
- * @left: index of the left element
- * @right: index of the right element
- * @size: size of the array
+ * quick_recursion - function for quicksort
+ * @array: array
+ * @left: index of left element
+ * @right: index of right element
+ * @size: array size
  */
+
 void quick_recursion(int *array, int left, int right, size_t size)
 {
 	int piv;
@@ -57,10 +58,11 @@ void quick_recursion(int *array, int left, int right, size_t size)
 }
 
 /**
- * quick_sort_hoare - sorts an array with the Quicksort algorithm
- * @array: array of ints to sort
- * @size: size of the array
+ * quick_sort_hoare - sort array using quicksort algorithm
+ * @array: int array
+ * @size: array size
  */
+
 void quick_sort_hoare(int *array, size_t size)
 {
 	if (!array || size < 2)
