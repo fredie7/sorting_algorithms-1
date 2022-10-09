@@ -1,9 +1,11 @@
 #include "sort.h"
+
 /**
- *swap_bubble -  swapping function
- *@array: the array
- *@x: the position
+ *swap_bubble - function to swap
+ *@array: array
+ *@x: position
  */
+
 void swap_bubble(int *array, int x)
 {
 	int tmp = array[x];
@@ -13,10 +15,11 @@ void swap_bubble(int *array, int x)
 }
 
 /**
- *bubble_sort - sort a linked list using bubble algo
- *@array: the array to sort
- *@size: the array size
+ *bubble_sort - sort using bubble algorithm
+ *@array: array to sort
+ *@size: array size
  */
+
 void bubble_sort(int *array, size_t size)
 {
 	size_t  x;
