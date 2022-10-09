@@ -2,12 +2,13 @@
 
 /**
  *top_down_merge - merge sort algorithm
- *@array: the int array pointer header
- *@ini:  the array size
- *@midd:  the array size
- *@end:  the array size
- *@dest: the int array pointer header
+ *@array: int array
+ *@ini:  array size
+ *@midd:  array size
+ *@end:  array size
+ *@dest: array pointer
  */
+
 void top_down_merge(int *array, size_t ini, size_t midd, size_t end, int *dest)
 {
 	size_t i = ini, j = midd, k;
@@ -26,13 +27,15 @@ void top_down_merge(int *array, size_t ini, size_t midd, size_t end, int *dest)
 		}
 	}
 }
+
 /**
  *top_down_split - merge sort algorithm
- *@dest: the int array pointer header
- *@ini:  the array size
- *@end:  the array size
- *@array: the int array pointer header
+ *@dest: array pointer
+ *@ini:  array size
+ *@end:  array size
+ *@array: int array
  */
+
 void top_down_split(int *dest, size_t ini, size_t end, int *array)
 {
 	size_t middle, i;
@@ -71,9 +74,9 @@ void top_down_split(int *dest, size_t ini, size_t end, int *array)
 
 /**
  *copy - merge sort algorithm
- *@array: the int array pointer header
- *@dest: the destination array
- *@size:  the array size
+ *@array: int array
+ *@dest: destination array
+ *@size: array size
  */
 
 void copy(int *array, int *dest, size_t size)
@@ -89,9 +92,10 @@ void copy(int *array, int *dest, size_t size)
 
 /**
  *merge_sort - merge sort algorithm
- *@array: the int array pointer header
- *@size:  the array size
+ *@array: int array
+ *@size: array size
  */
+
 void merge_sort(int *array, size_t size)
 {
 	int *dest = malloc(sizeof(int) * size);
